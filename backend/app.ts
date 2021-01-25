@@ -55,7 +55,7 @@ export class Program {
             if (ENV.LOGGING !== false) {
                 console.log(`Listen on port ${ENV.HTTP_PORT}...`);
             }
-            res();
+            res(null);
         }));
         
         return 0;
